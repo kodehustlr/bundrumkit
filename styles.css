@@ -1,0 +1,142 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/kick.png");
+}
+
+.k {
+  background-image: url("images/snare.png");
+}
+
+.l {
+  background-image: url("images/crash.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+/* ========== MEDIA QUERIES ========== */
+@media only screen and (max-width: 575px) {
+  h1 {
+    display: none;
+  }
+  h1.mobile {
+    display: block;
+    font-size: 2.5rem;
+  }
+  h1 .emoji {
+    display: block;
+  }
+  body {
+    background-color: #283149;
+    /* background-image: linear-gradient(45deg, #283149, #283149); */
+    /* background-image: linear-gradient(45deg, #283149, #372e53); */
+    height: 100vh;
+  }
+  .drum {
+    border: 6px solid #404B69;
+    border: 6px solid #a0accd;
+    border: 6px solid #7d8cb2;
+    border: 6px solid #85ff90;
+    border: 6px solid #a1ffaa;
+    border: 6px solid #5b6581;
+    font-size: 3.5rem;
+    line-height: 0;
+    color: #3cff89;
+    text-shadow: 3px 0 #283149;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+  }
+  .pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    box-shadow: 0 5px 5px 0 lightblue;
+    opacity: 0.5;
+  }
+  .set {
+    margin: 6% auto;
+  }
+
+  .w { color: #3cff89; }
+  .a { color: #3cefff; }
+  .s { color: #3c71ff; }
+  .d { color: #a95cff; }
+  .j { color: #ff5cce; }
+  .k { color: #b0e233;
+       color: #ffdb35; }
+  .l { color: #ff5c5c; }
+}
+
+@media only screen and (min-width: 576px) {
+  h1.mobile {
+    display: none;
+  }
+}
